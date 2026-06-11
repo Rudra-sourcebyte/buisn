@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    position:absolute;
+    width: 100%;
+    max-width: 100%;
+  height: 400vh;
+    overflow: hidden;
+}
+.img {
+    width: 100%;
+    height: 750px;
+    object-fit:fill;
+    display: block;
+
+}
+
+.a {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    opacity: 0.8;
+    width: 81%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 0.5px;
+    height: 70px;
+    font-size: 15px;
+    font-family: calibri;
+    border: 0px solid rgb(254, 194, 194);
+    border-radius: 10px;
+   background-color: #E8ECF1;
+    box-shadow: 0px 0px 10px rgba(207, 199, 199, 0.671);
+}
+.a1 {
+    color:  #1F2937;
+    text-decoration: none !important;
+    padding-right: 70px;
+    padding-top: 0px;
+}
+.a3 {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    color: #000000;
+    font-size: 60px;
+    font-family: calibri;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+.a4 {
+    position: absolute;
+    cursor: pointer;
+    top: 420px;
+    left: 200px;
+    color: #000000;
+    font-size: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.685);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(226, 226, 226, 0.671);
+    width: 190px;
+    height: 60px;
+    font-family: calibri;
+    font-weight: bold;
+    letter-spacing: 4px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.w{
+    width: 10%;
+    position: absolute;
+    height: 50px;
+    left: 980px;
+top: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+border: 1px solid  #E8ECF1;
+background-color:  #e8ecf15e;
+color: rgb(0, 71, 204);
+border-radius: 100%;}
+
+.avatars{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:#ddd;
+    display:flex;
+    top: 420px;
+    left: 460px;
+    position:absolute;
+    background-image: url(https://img.magnific.com/free-vector/smiling-young-man-illustration_1308-173524.jpg);
+    object-fit: contain;
+    justify-content:center;
+    align-items:center;
+    border:3px solid white;
+    margin-left:-15px;
+    font-weight:bold;
+}
+
+.d{
+     position: absolute;
+    top: 800px;
+    left: 200px;
+    color: #000000;
+    font-size: 35px;
+    font-family: calibri;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.d1{
+ width: 130px;
+    height: 130px;
+    border: 1px solid rgba(255, 255, 255, 0.578);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(226, 226, 226);
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 900px;
+    left: 200px;
+}
+.img3{
+    object-fit: fill;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+}
+
+.img5{
+  
+    position: absolute;
+    top: 15px;
+    left:0px;
+   object-fit: contain;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+    
+    .d2{
+    width: 130px;
+    height: 130px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(226, 226, 226, 0.671);
+    background: rgba(15, 9, 9, 0.8);
+    position: absolute;
+    top: 900px;
+    left: 360px;}
+
+    .d3{
+    width: 130px;
+    height: 130px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(226, 226, 226, 0.671);
+    background: rgba(188, 86, 86, 0.8);
+    position: absolute;
+    top: 900px;
+    left: 520px;}
+
+    .d4{
+     width: 130px;
+    height: 130px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(226, 226, 226, 0.671);
+    background: rgba(139, 96, 96, 0.8);
+    position: absolute;
+    top: 900px;
+    left: 680px;}
+
+    .d5{
+    width: 130px;
+    height: 130px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(226, 226, 226, 0.671);
+    background: rgba(17, 66, 105, 0.8);
+    position: absolute;
+    top: 900px;
+    left: 840px;}
+    .d6{
+    width: 130px;
+    height: 130px;
+    border: 1px solid rgba(255,255,255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(226, 226, 226, 0.671);
+    background: rgba(50, 2, 2, 0.8);
+    position: absolute;
+    top: 900px;
+    left: 1000px;}
+   .d7{
+    width: 130px;
+    height: 130px;
+    border: 1px solid rgba(255,255,255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(226, 226, 226, 0.671);
+    background: rgba(50, 2, 2, 0.8);
+    position: absolute;
+    top: 900px;
+    left: 1160px;}
+
+
+    .e{
+        width:72%;
+        height: 500px;
+        border:0px #000000 solid;
+        display: flex;
+        justify-content: center;
+        align-items:center; 
+         box-shadow: 0px 0px 10px rgba(226, 226, 226, 0.671);
+        border-radius: 10px;
+        position:absolute;
+        top: 1250px;
+        left:200px;
+        background-color:rgb(255, 249, 251);
+
+    }
+
+
+
+    .e1 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    color: #000000;
+    font-size: 40px;
+    font-family: calibri;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+.img2{
+   position:absolute;
+   top: 1100px;
+   left: 700px;
+   width: 600px;
+   height:600px;
+ border-radius: 100%;
+  mix-blend-mode: multiply;
+
+}
+
+.btn{
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    width: 150px;
+    height:50px;
+    border-radius:10px;
+    border-color: rgb(87, 87, 255);
+    background-color: rgb(105, 105, 255);
+    box-shadow:0px 0px 10px ;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    
+
+}
+
+.h{
+     position: absolute;
+    top: 1800px;
+    left: 200px;
+    color: #000000;
+    font-size: 35px;
+    font-family: calibri;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+
+    .f1{
+    width: 270px;
+    height: 250px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(226, 226, 226, 0.671);
+    background: rgba(15, 9, 9, 0.8);
+    position: absolute;
+    top: 1950px;
+    left: 200px;}
+    
+    .f2{
+    width: 270px;
+    height: 250px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(226, 226, 226, 0.671);
+    background: rgba(15, 9, 9, 0.8);
+    position: absolute;
+  top: 1950px;
+    left: 500px;}
+
+    .f3{
+    width: 270px;
+    height: 250px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(226, 226, 226, 0.671);
+    background: rgba(188, 86, 86, 0.8);
+    position: absolute;
+    top: 1950px;
+    left: 800px;}
+
+    .f4{
+   width: 270px;
+    height: 250px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(226, 226, 226, 0.671);
+    background: rgba(139, 96, 96, 0.8);
+    position: absolute;
+    top: 1950px;
+    left: 1100px;}
+
+    .f5{
+    width: 270px;
+    height: 250px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(226, 226, 226, 0.671);
+    background: rgba(17, 66, 105, 0.8);
+    position: absolute;
+    top: 2350px;
+    left: 200px;}
+    .f6{
+    width: 270px;
+    height: 250px;
+    border: 1px solid rgba(255,255,255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(226, 226, 226, 0.671);
+    background: rgba(50, 2, 2, 0.8);
+    position: absolute;
+   top: 2350px;
+    left: 500px;}
+   .f7{
+    width: 270px;
+    height: 250px;
+    border: 1px solid rgba(255,255,255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(226, 226, 226, 0.671);
+    background: rgba(50, 2, 2, 0.8);
+    position: absolute;
+    top: 2350px;
+    left: 800px;}
+       .f8{
+   width: 270px;
+    height: 250px;
+    border: 1px solid rgba(255,255,255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(226, 226, 226, 0.671);
+    background: rgba(50, 2, 2, 0.8);
+    position: absolute;
+    top: 2350px;
+    left: 1100px;}
+
+    .img6{
+            width: 270px;
+            height:250px;
+            border-radius: 10px;
+            object-fit: conatin;
+            cursor: pointer;
+
+
+    }
+    
+    .img3{
+            width: 130px;
+            height:130px;
+            border-radius: 10px;
+            transition: 0.4sec;
+            cursor: pointer;
+
+
+    }
+    .img7{
+  
+    position: absolute;
+    top: 20px;
+   object-fit: contain;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+    .btn1{
+         position: absolute;
+    top: 2800px;
+    left: 650px;
+    width: 190px;
+    height:50px;
+    border-radius:10px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    box-shadow:0px 0px 10px ;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+
+    
+
+.card{
+    background:white;
+    padding:15px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+
+.price{
+    margin-top:8px;
+    font-size:20px;
+    font-weight:bold;
+    color:#222;
+}
+
+.rating{
+    color: gold;
+    font-size: 18px;
+    margin: 8px 0;
+}
+.rating1{
+    color: gold;
+    font-size: 18px;
+    margin-left: 200px;
+}
+.j{
+    width: 50px;
+    height:50px;
+    border: 1px solid black;
+     border-radius:100% ;
+     position: absolute;
+     top: 250px;
+     left:110px;
+     align-items: center;
+     
+    
+    }
+    .j1{
+    width: 50px;
+    height:50px;
+    border: 1px solid black;
+     border-radius:100% ;
+     position: absolute;
+     top: 250px;
+     left:180px;
+     align-items: center;
+     
+    
+    }
+    .j2{
+    width: 50px;
+    height:50px;
+    border: 1px solid black;
+     border-radius:100% ;
+     position: absolute;
+     top: 250px;
+     left:250px;
+     align-items: center;
+     
+    
+    }
+    .j3{
+    width: 50px;
+    height:50px;
+    border: 1px solid black;
+     border-radius:100% ;
+     position: absolute;
+     top: 250px;
+     left:320px;
+     align-items: center;
+     
+    
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="w">$199</div>
+        <img src="image1.png" class="img">
+        <p class="a3">Roco Wireless<br>Headphone</p>
+        <button class="a4"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Shop Now</button>
+        <div class="avatars">
+    <div></div>
+    <div><img src="https://img.magnific.com/free-vector/smiling-young-man-illustration_1308-173524.jpg"; class="img5"></div>
+   
+     <div class="rating1">
+        ★★★★★
+    </div>
+</div>
+            
+        <div class="a">
+            <a href="#" class="a1" style="font-size: 30px;" ><i class="fa-brands fa-trade-federation"></i>eTrade</a>
+        <a href="#" class="a1">Home</a>
+        <a href="#" class="a1">About</a>
+        <a href="#" class="a1">Contact</a>
+        <a href="#" class="a1">Gallery</a>
+        <a href="#" class="a1">Pricing</a>
+        <a href="#" class="a1">Contact</a>
+        <a href="#" class="a1"><i class="fa-brands fa-sistrix"></i></a>
+         <a href="#" class="a1"><i class="fa-regular fa-heart"></i></a>
+          <a href="#" class="a1"><i class="fa-solid fa-cart-shopping"></i></a>
+           <a href="#" class="a1"><i class="fa-regular fa-user"></i></a>
+
+       
+</div>
+    </div>
+   <div class="d">
+    <p>Browse by Category</p>
+   </div>
+   <div class="d1"><img src="3979444_2069725.jpg" class="img3"></div>
+   <div class="d2"><img src="3918806_2071279.jpg" class="img3"></div>
+   <div class="d3"><img src="894679_O9IY2W0.jpg" class="img3"></div>
+   <div class="d4"><img src="https://static.vecteezy.com/system/resources/previews/025/864/528/non_2x/3d-realistic-laptop-with-speech-bubble-and-social-media-likes-online-social-concept-with-laptop-in-cartoon-style-illustration-vector.jpg" class="img3"></div>
+   <div class="d5"><img src="https://img.magnific.com/free-photo/computer-doodle-illustration_23-2151875163.jpg?semt=ais_hybrid&w=740&q=80" class="img3"></div>
+   <div class="d6"><img src="https://img.freepik.com/premium-vector/programmer-coder-concentrated-working-project-developing-programming-coding-technologies_569013-338.jpg" class="img3"></div>
+   <div class="d7"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKAk-_DiTfabPvAnMbKwF6ZpoE1P8CNrTB6w&s" class="img3"></div>
+
+   <div class="e">
+    <p class="e1">Enhance your <br>music experience</p>
+    <div class="j"><p>&nbsp;15day</p></div>
+    <div class="j1"><p>&nbsp;10hour</p></div>
+    <div class="j2"><p>&nbsp;54min</p></div>
+    <div class="j3"><p>&nbsp;54sec</p></div>
+
+    <button class="btn">Check it Out</button>
+    
+   </div>
+<img src="image 3.png" class="img2">
+
+
+<div>
+    <p class="h">Explore our Products</p>
+</div>
+<div class="products">
+
+  <div class="f1"><img src="https://c8.alamy.com/comp/HGJEPW/an-xbox-one-s-games-controller-on-a-white-background-HGJEPW.jpg" class="img6">
+      <div class="rating">
+        ★★★★★
+    </div>
+    <h3>Gaming controller</h3>
+     <p class="price">$22</p>
+
+
+
+
+</div>
+
+
+
+
+   <div class="f2"> <img src="https://img.freepik.com/premium-photo/gaming-keyboard-with-backlight-isolated-white-background_666369-4.jpg" class="img6">
+     <div class="rating">
+        ★★★★★
+    </div>
+    <h3>Mechanical Keyboard</h3>
+    
+     <p class="price">$22</p>
+
+
+</div>
+
+
+   <div class="f3"><img src="https://png.pngtree.com/background/20230625/original/pngtree-minimalistic-3d-camera-icon-on-white-background-picture-image_4051458.jpg" class="img6">
+     <div class="rating">
+        ★★★★
+    </div>
+    <h3>Camera</h3>
+     <p class="price">$19</p>
+
+</div>
+
+
+   <div class="f4"><img src="https://www.ooberpad.com/cdn/shop/products/QAcousticsM20.jpg?v=1643631978&width=1200"class="img6">
+     <div class="rating">
+        ★★★★
+    </div>
+    <h3>Speaker</h3>
+     <p class="price">$34</p>
+
+</div>
+
+
+   <div class="f5"><img src="https://rukminim2.flixcart.com/image/480/640/speaker/laptop-desktop-speaker/b/g/r/iball-soundwave-2-multimedia-2-0-black-original-imaejky6c48xgdez.jpeg?q=90"class="img6">
+     <div class="rating">
+        ★★★★★
+    </div>
+    <h3>Speaker</h3>
+     <p class="price">$21</p>
+
+</div>
+
+
+   <div class="f6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5jP-N07rXo99c4G6vlPHldSwasyRP_P3TEw&s"class="img6">
+     <div class="rating">
+        ★★★
+    </div>
+    <h3>Gaming Mouse</h3>
+     <p class="price">$12</p>
+
+</div>
+
+
+   <div class="f7"><img src="https://static.vecteezy.com/system/resources/previews/003/696/744/non_2x/headphone-on-white-background-isolate-free-photo.jpg"class="img6">
+     <div class="rating">
+        ★★★★★
+    </div>
+    <h3>Headphones</h3>
+     <p class="price">$17</p>
+
+</div>
+
+
+    <div class="f8"><img src="https://m.media-amazon.com/images/I/612UDEzKNWL._AC_UF1000,1000_QL80_.jpg"class="img6">
+         <div class="rating">
+        ★★★★
+    </div>
+            <h3>Gaming controller</h3>
+            <p class="price">$10</p>
+    </div>
+    </div>
+
+<button class="btn1">View all Products</button>
+</body>
+</html>
